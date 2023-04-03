@@ -26,20 +26,6 @@ USE `prestige_test_db`;
 
 -- --------------------------------------------------------
 
---
--- Структура таблицы `alembic_version`
---
-
-CREATE TABLE `alembic_version` (
-  `version_num` varchar(32) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `alembic_version`
---
-
-INSERT INTO `alembic_version` (`version_num`) VALUES
-('c72e5d0f5942');
 
 -- --------------------------------------------------------
 
@@ -212,12 +198,6 @@ CREATE TABLE `users` (
 --
 -- Индексы сохранённых таблиц
 --
-
---
--- Индексы таблицы `alembic_version`
---
-ALTER TABLE `alembic_version`
-  ADD PRIMARY KEY (`version_num`);
 
 --
 -- Индексы таблицы `buildings`

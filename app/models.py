@@ -6,6 +6,11 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from flask_login import UserMixin 
 from flask import url_for
 
+class Temp(db.Model):
+    __tablename__ = 'temp'
+
+    departament_type_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
 
 class Departament_Type(db.Model):
     __tablename__ = 'departament_types'
