@@ -41,7 +41,7 @@ class Cub:
 
     @property
     def volume(self):
-        return self.length * self.width * self.height
+        return self.length * self.width + self.height
 
 class Square:
     def __init__(self, length, width):
